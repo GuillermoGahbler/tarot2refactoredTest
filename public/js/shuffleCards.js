@@ -43,14 +43,32 @@ for( var b = 0; b < 78; b++) {
 //movement of the cards back being stacked in the center of the screen
 
 function do_something(j) {
-setTimeout(function() {
-  $("#fallingCard" + cardShuffleArray[j]).animate({
-    top: +367 - (j * .5) + 'px',
-    right: 44 + "vw",
-    zIndex: j
-  }, 150);
-}, 100 *j);
-}
+  setTimeout(function() {
+    $("#fallingCard" + cardShuffleArray[j]).animate({
+      top: +367 - (j * .5) + 'px',
+      right: 44 + "vw",
+      zIndex: j
+    }, 150);
+    $("#fallingCard0").animate({
+      top: +367 - (j * .5) + 'px',
+      right: 44 + "vw",
+      zIndex: j
+    }, 150)
+  }, 100 *j);
+  }
+
+
+
+
+// function do_something(j) {
+// setTimeout(function() {
+//   $("#fallingCard" + cardShuffleArray[j]).animate({
+//     top: +367 - (j * .5) + 'px',
+//     right: 44 + "vw",
+//     zIndex: j
+//   }, 150);
+// }, 100 *j);
+// }
 
 let cardShuffleArray = Array.from({ length: 79 }, (x, i) => i)
   .filter(x=> x !== 0);

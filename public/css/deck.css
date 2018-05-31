@@ -1,0 +1,56 @@
+
+
+.actions {
+    border-bottom:3px solid #686868;
+    margin-bottom:20px;
+    padding:0.6em 0.7em;
+}
+
+.actions a, .actions a:active, .actions a:visited, .actions a:hover {
+    text-decoration:none;
+    color:#686868;
+    background-color:#292929;
+    padding:0.3em 0.7em;
+    margin-right:10px;
+    cursor:default;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.actions a.enabled {
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.card {
+    width:100px;
+    height: 180px;
+    border:1px solid #000000;
+    background-image:url(../images/tarot_card_back.jpg);
+    background-size: cover;
+    padding:10px;
+    border-radius:8px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-box-shadow:-1px 0 5px #000000;
+    -webkit-box-shadow:-1px 0 5px #000000;
+    float:left;
+    margin:0 -131px 20px 10px;
+    
+}
+
+#cards {
+    margin-right:110px
+}
+
+.card:hover {
+    box-shadow: 0px 0px 23px 8px #0ff;
+    cursor: pointer;
+}
+
+#glow {
+    box-shadow: 0px 0px 23px 8px #0ff;
+    margin-top: -28px;
+    margin-bottom: 48px;
+}

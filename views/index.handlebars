@@ -1,0 +1,90 @@
+<body>
+
+  {{#if logged}}
+      <div style="color: #fff">Welcome {{name}}</div>
+  {{/if}}
+
+  <div id="shuffleContainer">
+    <div class="stackedDeck"></div>
+    <div id="shuffleMe">
+        <h1 id="shuffleMeTitle">Shuffle Me!!<span style="font-size:10px;">(click to shuffle)</span></h1>
+    </div>
+  </div>
+  <div id="pilotFadeOut">
+      <!-- Button to open the modal login form -->
+      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form id="modalForm" class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+          <img src="/images/image_avatar.jpg" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="modContainer">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+
+              <p style="text-align: center"> OR<br> LOGIN WITH</p>
+              <A href="/auth/facebook">
+                  <img src="/images/fb.svg" alt="facebook logo" style="width:30px; height:30px; padding-left: 66px;">
+              </a>
+              <A href="/auth/google">
+                  <img src="/images/google.svg" alt="google logo" style="width:30px; height:30px;">
+              </a>
+              <A href="/auth/twitter">
+                  <img src="/images/twtr.svg" alt="twitter logo" style="width:30px; height:30px;">
+              </a>
+          </div>
+
+          <div class="modContainer" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+      </form>
+      </div>
+      <div>
+          <h1 id="title">
+              TAROT DAILY
+          </h1>
+      </div>
+      <div id="selectionBox">    
+              <h2 id="catagoryheader">What Do You Want To Learn More About</h2>
+<!--The "actiasdon" is supposed to be the "action" broke it so i could play with animations -->
+              <form  id="catagoryForm"                  actiasdon="/catagory">
+                  <select name="catagory">
+                      <option value="love">Love</option>
+                      <option value="hate">Hate</option>
+                      <option value="power">Power</option>
+                      <option value="education">Education</option>
+                      <option value="money">Money</option>
+                      <option value="lust">Lust</option>
+                      <option value="death">Death</option>
+                      <option value="birth">Birth</option>
+                      <option value="retirement">Retirement</option>
+                      <option value="thatItchYouGotInMexico">That Itch You Got In Mexico</option>
+                  </select>
+              <input id="catagorySubmit" type="button" value="Submit">
+              </form>
+      </div> 
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/pilotFadeOut.js"></script>
+  <script src="/js/shuffleCards.js"></script>
+</body>

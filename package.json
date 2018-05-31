@@ -1,0 +1,38 @@
+{
+  "name": "tarot-card-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-Elliott44/Tarot-Card-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/C-Elliott44/Tarot-Card-App/issues"
+  },
+  "homepage": "https://github.com/C-Elliott44/Tarot-Card-App#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "sequelize": "^4.37.8"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "mysqldump": "^1.4.2"
+  }
+}

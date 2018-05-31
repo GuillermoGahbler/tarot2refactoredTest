@@ -1,0 +1,19 @@
+.cheese {
+    position: absolute;
+    width: 100px;
+    height: 180px;
+    padding: 10px;
+    background-color: aqua;
+    right: 44vw;
+    top: -109px;
+    transform: perspective(90em) rotateX(69deg);
+    background-image: url(../images/tarot_card_back.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+#shuffleMe {
+    display: none;
+    text-align: center;
+    font-size: 50px;
+    color: teal;
+}

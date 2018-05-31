@@ -1,0 +1,22 @@
+ <body>
+    {{#if logged}}
+      <div style="color: #fff">Welcome {{name}}</div>
+    {{/if}}
+
+    <div id="selectCardInstruction"> 
+        <h1>Please Select 10 Cards</h1>
+        <h4>These Cards Will Help Guide You</h4>
+    </div>
+    <div id="cards"></div> 
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/pilotFadeOut.js"></script>
+<script src="/js/deck.js"></script>
+<script src="/js/glow.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+    deployCardsOnLoad()
+  });
+</script>
+</body>

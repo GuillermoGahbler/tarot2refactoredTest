@@ -1,0 +1,145 @@
+.container {
+    position: fixed;;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 100%;
+    
+}
+
+.row3 {
+    height: 33%;
+}
+
+.row {
+    height: 25%;
+}
+
+
+
+.yep {
+    height: 150px;
+    width: 90px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.nope {
+    height: 150px;
+    width: 90px;
+    margin: 1%;
+    float: left;
+    
+}
+
+.wrap {
+    height: 150px;
+    width: 190px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.front {
+    background-image: url(../images/tarot_card_back.jpg);
+    background-size: cover;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.back {
+    background-size: cover;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+
+/*Cameron Added the css below*/
+
+body {
+    height: -webkit-fill-available;
+    background-image: url(../images/tarot_cards.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    color: rgba(255, 255, 255, .5);
+    font-size: 70px;
+    position: absolute;
+    top: 143px;
+    width: 100vw;
+    text-align: center;
+}
+
+#selectionBox {
+    width: 100vw;
+    margin-top: 350px;
+    overflow: hidden;
+    position: absolute;
+    /* background-color: rgba(26, 107, 107, .7); */
+}
+
+#catagoryheader {
+    width: 100vw;
+    text-align: center;
+    color: rgba(255, 255, 255, .5);
+}
+
+#catagoryForm {
+    float: left;
+    width: 75vw;
+    overflow: auto;
+    margin-left: 12vw;
+}
+
+select {
+    text-align: center;
+    width: 75vw;
+    height: 35px;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 255, 255, .5);
+}
+
+#catagorySubmit {
+    text-align: center;
+    margin-top: 5px;
+    width: 92px;
+    height: 35px;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 255, 255, .5);
+}
+
+#shuffleMeTitle {
+    color: rgba(255, 255, 255, .5);
+    font-size: 70px;
+    position: absolute;
+    top: 100px;
+    width: 100vw;
+    text-align: center;
+}
+
+#selectCardInstruction{
+    color: rgba(255, 255, 255, .5);
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 40px;
+} 
+

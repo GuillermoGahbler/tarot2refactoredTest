@@ -73,7 +73,13 @@ $(document).ready(function () {
               $("#modalCardType").html("<p><strong>Card Type:</strong>   " + cardType + "</p>");
               $("#modalCardTypeMeaning").html("<p><strong>Arcana Meaning:</strong>   " + cardTypeMeaning + "</p>");
               // $("#modalCardPosition").html("<p>Position: " + position + "</p>");
-  
+              //Position stuff
+            let positionName = position[positionNumber].name;
+            $("#positionName").append(positionName);
+            let positionMeaning = position[positionNumber].meaning;
+            $("#positionMeaning").append(positionMeaning);
+            let meaning = (fullArray[positionNumber].meaning);
+            $("#modalMeaning").append(meaning);
   
               function openModal() {
                   $("#totalModal").css('display', 'block');
@@ -108,6 +114,9 @@ $(document).ready(function () {
   }
   
   function clearModal() {
+    $("#modalCardTypeMeaning").empty();
+    $("#positionName").empty();
+    $("#positionMeaning").empty();
       $("#modalCardName").empty();
       $("#modalCardImg").empty();
       $("#modalCardType").empty();

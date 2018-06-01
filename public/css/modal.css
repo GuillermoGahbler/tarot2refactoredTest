@@ -217,3 +217,21 @@ span.psw {
   border: 1px solid #888;
   width: 80%;
 }
+
+#modalMeaning {
+  font-style: italic;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+#positionName {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#positionMeaning {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.25em;
+}

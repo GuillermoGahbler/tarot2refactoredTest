@@ -119,7 +119,7 @@ $(document).ready(function () {
               let element = $("<img>");
               $(element).attr('src', cardImg);
               // let cardImgElement
-              let position = (fullArray[positionNumber].position);
+            //   let position = (fullArray[positionNumber].position);
               let cardType = (fullArray[positionNumber].cardType);
               let cardTypeMeaning = (fullArray[positionNumber].type.meaning);
               $("#modalCardImg").append(element);

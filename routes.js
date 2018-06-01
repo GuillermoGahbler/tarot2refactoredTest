@@ -27,7 +27,7 @@ router
     .then(data=>{
       const results = {user: data[0], readings: data[1]}
       res
-        .cookie("name",results.user.username,{maxAge:1000* 60 * 1})
+        .cookie("name",results.user.username,{maxAge:1000* 60 * 10})
         .render("index",{
           ...results,
           logged: req.signedCookies.isLoggedIN,
